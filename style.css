@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Merriweather+Sans:ital@1&family=Poppins&family=Roboto&family=Roboto+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    /* background-color: #d9f0fe; */
+    background-color: rgb(22, 22, 22);
+}
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-ads{
+    width: 100%;
+    margin-left: 20px;
+}
+.nav-ads .for-tab,
+.nav-ads .for-mob{
+    display: none;
+}
+hr{
+    width: 80vw;
+    margin:35px auto;
+}
+.logo{
+    font-size: 30px;
+    color: #00A5FF;
+    font-weight: 600;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+nav li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+h3{
+    color: white;
+    text-align: center;
+}
+.link{
+    color: #00A5FF;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:100px auto;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.box{
+    width: 40%;
+    border: 1px  solid rgb(44, 44, 44);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+    overflow: hidden;
+}
+.ads{
+    width: 100%;
+}
+.ads .for-other{
+    display: none;
+}
+.ads .for-pc{
+    display: block;
+}
+.box img{
+    margin: 10px auto;
+    width: 80%;
+    display: block;
+    box-shadow: 1px 1px 6px black;
+    opacity: 0.8;
+}
+.btn{
+    border: none;
+    background-color:#0092e1 ;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 1px 1px 4px black;
+}
+.btn:hover{
+    background-color:#00A5FF;
+    transition: all 0.1s linear;
+}
+.faq{
+    width: 80%;
+    margin: auto;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(231, 227, 227);
+    margin: 20px;
+}
+.info{
+    margin: auto;
+    width: 80%;
+}
+.info img{
+    width: 100%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #00A5FF;
+    padding: 30px;
+    text-align: center;
+}
+@media screen and (max-width:1200px){
+    .logo{
+        display: none;
+    }
+    .nav-ads .for-pc{
+        display: none;
+    }
+    .nav-ads .for-tab{
+        display: block;
+    }
+}
+@media screen and (max-width:800px){
+    .logo{
+        display: none;
+    }
+    .container,
+    .faq{
+        width: 90%;
+    }
+    .ads .for-other{
+        display: block;
+    }
+    .ads .for-pc{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:700px){
+    .logo{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .box{
+        width: 90%;
+    }
+}
+@media screen and (max-width:550px){
+    .logo{
+        display: none;
+    }
+    .nav-ads .for-tab{
+        display: none;
+    }
+    .nav-ads .for-mob{
+       display:block;
+       position: fixed;  
+       z-index: 1;
+       bottom: 0;
+       left: 0;
+    }
+    nav li{
+        width: 100vw;
+    }
+    .logo{
+       margin: auto;
+       display: block;
+    }
+
+    h2{
+        font-size: 16px;
+        padding: 5px;
+    }
+    h3{
+        padding: 5px;
+        font-size: 15px;
+    }
+    
+    p{
+        font-size:13px ;
+    }
+}
+@media screen and (max-width:550px){
+    /* .logo{
+        font-size: 25px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    } */
+    .logo{
+        display: none;
+    }
+    hr{
+        margin: 20px auto;
+    }
+    p{
+        font-size: 11px;
+    }
+}
